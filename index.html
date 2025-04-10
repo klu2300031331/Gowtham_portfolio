@@ -1,104 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thota Gowtham | Full Stack Developer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #1A73E8;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #fff;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #1A73E8;
-    }
-    .resume-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1A73E8;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .resume-button:hover {
-      background-color: #155ac3;
-    }
-    footer {
-      background: #1A73E8;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio Website - Gowtham</title>
 </head>
 <body>
-  <header>
-    <h1>Thota Gowtham</h1>
-    <p>Full Stack Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Gowtham</a>
+            </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Full Stack Developer with experience in building scalable web applications using React, Spring Boot, and Django.
-    </p>
-  </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="resume.html" class="nav__link">Resume</a></li>
+                </ul>
+            </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Sportz Management System:</strong> Full-stack web app with real-time updates and payment gateway integration.</li>
-      <li><strong>Movie Ticket Booking (Ongoing):</strong> Real-time ticket booking with seat selection and Stripe payment.</li>
-      <li><strong>Job Portal (Ongoing):</strong> Job posting and application platform with admin dashboard.</li>
-    </ul>
-  </section>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can view or download my resume below:</p>
-    <a class="resume-button" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
-  </section>
+    <!-- Your existing sections (Home, About, Skills, Work, Contact) go here -->
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:gowthamthota847@gmail.com">gowthamthota847@gmail.com</a></p>
-    <p>Phone: <a href="tel:+917981209406">+91 79812 09406</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/thota-gowtham-55b791343/" target="_blank">Thota Gowtham</a></p>
-    <p>GitHub: <a href="https://github.com/klu2300031331" target="_blank">klu2300031331</a></p>
-  </section>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Gowtham</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100086453171228" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/_.gowtham._444/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/thota-gowtham-55b791343/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/klu2300031331" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Gowtham. All rights reserved</p>
+    </footer>
 
-  <footer>
-    © 2025 Thota Gowtham
-  </footer>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
